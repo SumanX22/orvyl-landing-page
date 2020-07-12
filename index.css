@@ -26,11 +26,29 @@ div.text {
 
 div.text h1 {
   font-size: 2rem;
-  color: var(--deep-grey);
+  color: var(--dark-grey);
   padding: 1rem;
   margin-bottom: 2rem;
+  line-height: 2.1rem;
 }
 
 div.text p {
   padding: 1rem;
+  line-height: 1.4rem;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 680px) {
+  section {
+    flex-direction: column;
+  }
+
+  div.text {
+    max-width: 100%;
+  }
+
+  div.text p,
+  div.text h1 {
+    max-width: 60%;
+  }
 }
