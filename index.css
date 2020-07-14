@@ -37,7 +37,7 @@ section {
 
 section#intro {
   position: relative;
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.6) 25%);
+  background: linear-gradient(to right, #fff 25%, rgba(255, 255, 255, 0.6));
 }
 
 section#intro::before {
@@ -51,15 +51,17 @@ section#intro::before {
   background-size: cover;
 }
 
-#intro div.text h1 {
-  color: #000000;
-  font-family: "comfortaa";
-  letter-spacing: 2px;
+#intro div.logo {
+  width: 40vw;
+  height: 20vw;
+  background-image: url(./assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #intro div.text p {
   font-weight: 700;
-  color: #333333;
+  color: #555;
 }
 
 div.text {
@@ -221,5 +223,10 @@ div.text.light p {
 
   #busy-schedule {
     background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  #intro div.logo {
+    height: 40vw;
+    width: 80vw;
   }
 }
