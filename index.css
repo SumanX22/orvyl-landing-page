@@ -64,6 +64,11 @@ section#intro::before {
   color: #555;
 }
 
+span.terms-conditions {
+  transform: scale(0.5);
+  opacity: 0.5;
+}
+
 div.text {
   max-width: 50%;
   padding: 2.5rem;
